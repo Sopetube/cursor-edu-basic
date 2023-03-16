@@ -1,10 +1,6 @@
 body {
-    background: ;
-    display: block;
-    margin: 80px 30% 0 70px;  
+    margin: 80px 50% 0 70px;  
 }
 .content{
-    max-width: 500pt;
-    border-color: black;
-    border-width: 1px;
+    max-width: 30pt;
 }
