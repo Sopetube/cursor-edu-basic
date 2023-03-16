@@ -1,0 +1,11 @@
+body {
+    background: ;
+    display: block;
+    margin: 80px 30% 0 70px;  
+}
+.content{
+    background-color: 249 251 253;
+    max-width: 500pt;
+    border-color: black;
+    border-width: 1px;
+}
