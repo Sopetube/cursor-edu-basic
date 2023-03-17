@@ -1,3 +1,23 @@
 body {
-    margin: 80px 50% 0 70px;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'Times New Roman';
+    font-weight: lighter;
+}
+.page {
+    font-size: 90%;
+    padding: 5vh 5vw;
+    margin: auto;
+    width: 32vw;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
 }
