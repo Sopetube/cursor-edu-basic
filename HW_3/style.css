@@ -16,7 +16,8 @@ body{
 .box1 {
     align-items: center;
     display: flex;
-    padding: 16px 120px;
+    padding: 16px;
+    justify-content: center;
     background: #0B2239;
     font-family: 'Inter', sans-serif;
     margin-bottom: 24px;
