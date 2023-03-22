@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+.container {
+    padding: 64px 24px;
+    margin: 0 auto;
+}
+
+.box1 {
+    align-items: center;
+    display: flex;
+    padding: 16px 120px;
+    background: #0B2239;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 24px;
+    min-width: 750px;
+}
+
+.B1-content {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.B1-Button1{
+    white-space: nowrap;
+    height: 36px;
+    border: none;
+    text-decoration: underline;
+    background: transparent;
+    padding: 8px 10px;
+    color: #4AD295;
+}
+.B1-Button2{
+    white-space: nowrap;
+    height: 36px;
+    border: none;
+    background: #4AD295;
+    padding: 8px 10px;
+    color: #FFFFFF;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+.box2 {
+    background-color: #2B2627;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    display: flex;
+    padding: 16px 120px;
+    justify-content: center;
+    margin-bottom: 72px;
+    min-width: 750px;
+}
+
+.B2-content{
+    color: #FFFFFF;
+    padding: 8px 16px 8px 8px;
+    font-size: 13px;
+}
+
+.box3{   
+    align-items: center;
+    display: flex;
+    padding: 16px;
+    width: 560px;
+    height: 72px;
+    background: #FFF;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 24px;
+    border-radius: 16px;
+}
+
+.B3-content{
+    color: #0D0C22;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.B3-Button1{
+    font-size: 12px;
+    white-space: nowrap;
+    line-height: 20px;
+    border: none;
+    background: #0D0C22 0.05;    ;
+    padding: 4px 10px;
+    color: #0D0C22;    ;
+    border-radius: 8px;
+}
+
+.B3-Button2{
+    line-height: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    border: none;
+    background: #EA4C89;
+    padding: 4px 10px;
+    color: #ffffff;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.box4{   
+    align-items: center;
+    display: flex;
+    padding: 16px;
+    width: 560px;
+    height: 64px;
+    background: #26262B;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 72px;
+    border-radius: 10px;
+}
+
+.B4-content{
+    font-size: 12px;
+    color: #FFF;
+}
+
+.B4-Button1{
+    line-height: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    border: none;
+    background: #FFF;
+    padding: 4px 10px;
+    color: #26262B;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.wrap{
+    display: flex;
+    gap: 40px;
+}
+
+.box5, .box6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.box5{   
+    padding: 24px;
+    width: 360px;
+    min-width: 315px;
+    height: 206px;
+    background: #1C2540;
+    margin-bottom: 72px;
+    border-radius: 10px;    
+}
+
+.B5-content{
+    padding: 10px 0;
+    color:#FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.box5-buttons-wrap{
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+}
+
+.B5-Button1{
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+}
+
+.B5-Button2{
+    width: 85px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    background: #09B3AF;
+    color: #FFF;
+}
+
+.box6{   
+    padding: 16px;
+    width: 360px;
+    height: 170px;
+    background: #FFF;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+.B6-content{
+    padding: 10px 0;
+    color:#687F8C;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.box6-buttons-wrap{
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+}
+
+.B6-Button1{
+    background-color: #EAF0F4;
+    color: #687F8C;
+    border-radius: 6px;
+    border:none;
+    width: 160px;
+    padding: 8px;
+}
+
+.B6-Button2{
+    background: #40C1A7;
+    border-radius: 6px;
+    border:none;
+    width: 160px;
+    color: #FFF;
+    padding: 8px;
+}
+
+.box7{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 10px; */
+    align-items: center;
+    display: flex;
+    padding: 32px;
+    width: 320px;
+    height: 260px;
+    background: #FFF;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+}
+
+.B7-Heading{
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.B7-content{
+    width: 256px;    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+}
+.B7-Button{
+    width: 121px;
+    height: 44px;
+    border: none;
+    border-radius: 43px;
+    background-color: #4A7EFF;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.box8{   
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 320px;
+    height: 137px;
+    background: #FFF;
+    font-family: 'Inter', sans-serif;
+    border-radius: 4px;
+    line-height: 20px;
+    min-width: 230px;
+}
+
+.B8-content{
+    /* padding: 10px 0; */
+    color:#000000;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.box8-buttons-wrap{
+    margin-top: 12px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.B8-Button1{
+    background-color: transparent;
+    color: #6666FF;
+    border-radius: 6px;
+    border:none;
+    /* width: 160px; */
+}
+
+.B8-Button2{
+    background: #6666FF;
+    border-radius: 6px;
+    border:none;
+    width: 64px;
+    color: #FFF;
+    padding: 8px;
+}
