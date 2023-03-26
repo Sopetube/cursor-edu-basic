@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* HEADER */
+
+header{
+    max-width: 1450px;
+    background-color: #ED4C5C;
+    display:flex;
+    justify-content: space-between;
+    padding: 94px 150px 95px 165px;
+}
+.join-box{
+    width: 445px;    
+    color: #fff;
+}
+.join-box > h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.join-box > p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+.store-logos{
+    margin-top: 44px;
+    display:flex;
+    gap: 25px;
+    
+}
+
+.store-logos > img{
+    cursor: pointer;
+}
+
+.slider-image > img{
+    Width: 445px;
+    Height: 311px;
+}
+
+/* MAIN */
+
+main{
+    width: 100vw;
+    max-width: 1450px;
+    background-color: #ffffff;
+    display:flex;
+    justify-content: space-between;
+    padding: 94px 165px 95px 165px;
+}
+
+.contact-box{
+    width: 445px;    
+    color: #000;
+}
+.contact-box > h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.contact-box > p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    Width: 445px;
+    Height: 311px;
+}
+input, select, option{
+    padding: 20px 30px;
+    outline: none;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 6px;
+}
+
+.fl-name{
+    display: flex;
+}
+#name{
+    width: 45%;
+    margin-right: 45px;
+}
+#last-name{
+    width: 45%;
+}
+#phone{
+    margin: 24px 0;
+}
+.submit-now{
+    width: 160px;
+    background-color: #ED4C5C;
+    color: #fff;
+    margin: 32px 0;
+    padding: 17px 34px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1450px;
+    background-color: #FAFAFA;
+    padding: 85px 165px 86px 165px;
+
+}
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-wrap li, a{
+    list-style: none;
+    text-decoration: none;
+    color: #101010;
+    margin: 10px 0;
+
+}
+.footer-wrap h2 {
+    margin-bottom: 33px;    
+}
+.social-logos{
+    margin-top: 15px;
+}
+.social-logos img {
+    margin-right: 20px;
+}
+.span-wrap span{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.copyright{
+    padding: 86px 0;
+}
