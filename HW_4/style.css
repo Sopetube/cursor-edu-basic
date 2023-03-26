@@ -92,6 +92,9 @@ input, select, option{
     color: #333;
     border-radius: 6px;
 }
+select{
+    color: #13274380;
+}
 
 .fl-name{
     display: flex;
