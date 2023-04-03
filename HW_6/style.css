@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #E5E5E5;
+    /* position: relative; */
+}
+.wrap-overall{
+    height: 100vh;
+    max-width: 1120px;
+    align-items: center;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.navigation nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header{
+}
+
+.navigation{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #212353;
+    transition: 0.4s;
+
+}
+a:hover{
+    text-decoration: none;
+    color: #9C69E2;
+}
+
+.navigation ul{
+    margin-left: 121px;
+    display: flex;
+    padding-right: 40px;
+    flex-grow: 1;
+}
+
+.navigation nav li{
+    list-style: none;
+    padding-right: 40px;
+}
+
+.first-menu{
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.request-demo-button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 210px;
+    height: 60px;
+    font-weight: 500;
+    padding: 17px 29px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border: none;
+    border-radius: 50px;
+}
+.request-demo-button:hover{
+    color: #fff;
+    background-color: #212353;
+    transition: 0.5s;
+}
+.request-demo-button i{
+    padding-left: 20px;
+}
+
+/* Welcome section*/
+
+.welcome-section{
+    position: relative;
+    display: flex;
+    margin-top: 140px;
+}
+.welcome-left-side{
+    width: 620px;
+}
+.welcome-left-side span{
+    margin-top: 50px;
+    color: #212353;
+    font-weight: 700;
+    font-size: 80px;
+}
+.welcome-section img{
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    width: 70%;
+}
+
+.welcome-section p{
+   width: 380px; 
+   margin-top: 50px;
+   color: #4B5D68;
+
+}
+.learn-more-button{
+    width: 170px;
+    height: 60px;
+    margin: 50px 0 100px 0;
+    padding: 16px 37px;
+    background-color: #9C69E2;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+.learn-more-button:hover{
+    background-color: #212353;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/* Section pink banner */
+
+
+.pink-banner {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+
+}
+.storage-bank-info{
+    padding: 125px 92px;
+}
+.storage-bank-info h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #212353;
+}
+
+.storage-bank-info p{
+    padding-top: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4B5D68;    ;
+}
+
+/* Section "Features" */
+
+.features{
+    margin-top: 150px;
+}
+.features-head{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 584px;
+}
+.features-head p{
+    margin: 50px 0;
+    text-align: center;
+    color: #4B5D68;
+}
+.features-description{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-item{
+    max-width: 50%;
+    display: flex;
+    padding: 50px;
+}
+.card-item h2{
+    white-space: nowrap;
+}
+.card-item p{
+    margin: 20px 0;
+    color: #4B5D68;
+    font-size: 14px;
+    line-height: 160%;
+    flex-grow: 1;
+}
+.card-item-content{
+    margin-left: 30px ;
+    color: #212353;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.card-item-content a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #212353;
+}
+.card-item-content a:hover{
+    color: #9C69E2;
+    
+}
+.card-item img{
+    width: 240px;
+}
+.material-symbols-rounded{
+    color: #9C69E2;
+}
+
+/* Section "Testimonials" */
+
+.testimonials-wrap{
+    margin-top: 183px;
+    margin-bottom: 150px;
+    background-color: #9C69E2;
+    border-radius: 50px;
+    padding: 109px 76px 58px 93px;
+}
+.testimonials-wrap>h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+.testimonials-card{
+    margin-top: 88px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 60px 103px 80px 103px;
+    box-shadow: 0 20px 0 0 #8a50db;
+}
+
+.testimonials-card>img{
+    margin: 0 0 100px 0;
+}
+
+.testimonials-card_card-info{
+    margin-left: 44px;
+}
+.testimonials-card_card-info h3{
+    font-weight: 900;
+    font-size: 18px;
+    color: #212353;
+}
+
+.testimonials-card_card-info span{
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #9C69E2;
+}
+
+.testimonials-card_card-info p{
+    margin-top: 16px;;
+    font-size: 18px;
+    line-height: 180%;
+    color: #4B5D68;
+}
+
+.testimonials-slider{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.slide-circle img{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.slide-circle{
+    display: flex;
+}
+.slide-arrows{
+    cursor: pointer;
+}
+.slide-arrows img:first-child{
+    padding-right: 20px;
+}
+
+
+/* FOOTER */
+
+.footer-wrap{
+    padding-top: 102px;
+}
+.free-trial{
+    display: flex;
+    justify-content: space-between;
+}
+.free-trial_buttons{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.free-trial_buttons>.learn-more-button{
+    margin: 0;
+}
+.free-trial_content>p{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #212353;
+}
+
+.free-trial_content>h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #4B5D68;
+}
+
+.footer-nav-columns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+}
+
+.footer-nav-about nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer-nav-about ul, .footer-nav-help ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.footer-nav-columns li{
+    list-style: none;
+    margin-top: 20px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+.footer-logo>h4{
+    margin-left: 20px;
+    color: #212353;
+}
+.footer-nav-columns_info{
+    color: #212353;
+}
+.address{
+    margin-top: 65px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+}
+.contact{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+}
+.social-icons{
+    margin-top: 30px;
+    margin-right: 32px;
+
+}
+.social-icons img:hover{
+    background-color: #212353;
+    border-radius: 50px;
+    transition: 1s;
+}
+.copyright{
+    margin-top: 93px;
+}
+.livechat{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
