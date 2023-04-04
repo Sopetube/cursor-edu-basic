@@ -9,10 +9,9 @@ body{
     /* position: relative; */
 }
 .wrap-overall{
-    height: 100vh;
     max-width: 1120px;
     align-items: center;
-    width: 1300px;
+    /* width: 1300px; */
     margin: 0 auto;
 }
 
