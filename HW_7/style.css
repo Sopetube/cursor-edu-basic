@@ -113,6 +113,7 @@ nav a:hover::after {
 /* HERO */
 
 .hero-background{
+    /* background-color: #bcb0ae; */
     position: relative;
     max-width: 1440px;
     height: 550px;
@@ -149,6 +150,12 @@ nav a:hover::after {
     font-size: 18px;
     line-height: 30px;
     color: #fff;
+}
+
+.hero-bgc{
+    position: relative;
+    background-color: #b8acaa;
+    z-index: -2;
 }
 
 .show-more-button{
