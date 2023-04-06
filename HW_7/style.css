@@ -27,14 +27,28 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;    
+    position: relative;
+  }
+
+.main_item img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0s ease;
+    transform: translateY(0px);
+}
+
+.main_item img:hover{
+    transform: translateY(-5px);
+    transition: transform 0.4s ease;
 }
 
 .logo{
     justify-content: flex-start;
-}
-
-.logo>img{
     width: 109px;
     height: 41px;
 }
@@ -45,36 +59,60 @@ header{
 
 nav{
     display: flex;
-    gap: 85;
+    gap: 80px;
 }
 nav a{
+    display: block;
+    position: relative;
     text-decoration: none;
     color: #000;
-    padding-right: 80px;
 }
+
 nav a:hover{
     color: #EDA3B5;
+}
+nav a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #EDA3B5;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-radius: 50px;
+}
 
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .full-width{
     padding: 5px 0;
     display: flex;
+}
+
+.card-items img{
+    display: flex;
     justify-content: center;
-}
-
-.card-items{
-    gap: 33px;
-    margin-left: 60px;
+    align-items: center;
+    gap: 40px;
     cursor: pointer;
+    position: relative;
+    transition: transform 0s ease;
+    transform: translateY(0px);
+}
+.card-items img:hover{
+    transform: translateY(-5px);
+    transition: transform 0.4s ease;
 }
 
+/* HERO */
 
-/* MAIN */
-
-/* SLider */
-
-.slider-background{
+.hero-background{
     position: relative;
     max-width: 1440px;
     height: 550px;
@@ -82,7 +120,7 @@ nav a:hover{
     
 }
 
-.slider-background img{
+.hero-background img{
     height: 100%;
     position: absolute;
     width: 100%;
@@ -92,13 +130,12 @@ nav a:hover{
     object-fit: cover;
 }
 
-
-.slider-content{
+.hero-content{
     margin-top: 103px;
     position: relative;
 }
 
-.slider-content h2{
+.hero-content h2{
     width: 361px;
     font-size: 48px;
     font-weight: 400;
@@ -106,13 +143,14 @@ nav a:hover{
     color: #fff;
 }
 
-.slider-content p{
+.hero-content p{
     margin-top: 15px;
     width: 446px;
     font-size: 18px;
     line-height: 30px;
     color: #fff;
 }
+
 .show-more-button{
     padding: 23px 78px;
     border: none;
@@ -123,14 +161,20 @@ nav a:hover{
     font-weight: 500;
     font-size: 18px;
     margin-top: 57px;
-}
-.show-more-button:hover{
-    background-color: black;
+    cursor: pointer;
 }
 
+.show-more-button:hover{
+    background-color: rgb(255, 255, 255);
+    color:#1B2437;
+    transition: 0.4s;
+}
 
 /* COLECTIONS */
 
+.colection_cards > div{
+    margin-top: 71px;
+}
 .colections{
     display: grid;
     grid-template-columns: 445px 303px 302px;
@@ -155,17 +199,18 @@ nav a:hover{
 .item-1 span:last-child{
     margin-top: 8px;
     display: block;
-    font-weight: 400;
     font-size: 14px;
     width: 93px;
     padding: 5px 22px;
-    /* height: 30px; */
     color: #fff;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 8px; 
     text-align: center;
     font-family: 'Mulish', sans-serif;
+}
 
+.colections>div:hover{
+    transform: scale(1.01);
 }
 
 .sub_title{
@@ -240,7 +285,8 @@ nav a:hover{
 .shop h2 {
     text-align: center;
 }
-/* You MAY LIKE SECTION */
+
+/* "You MAY LIKE" SECTION */
 
 .may_like-grid{
     display: grid;
@@ -249,13 +295,16 @@ nav a:hover{
     gap: 30px;
 
 }
+
 .may_like{
     margin-top: 70px;
 }
+
 .may_like h2{
     font-weight: 600;
     font-size: 48px;
 }
+
 .may_like-grid{
     margin-top: 35px;
 }
@@ -270,11 +319,13 @@ nav a:hover{
 .card_content{
     padding: 16px 18px 18px 24px;
 }
+
 .card_content h3{
     font-weight: 900;
     font-size: 18px;
     line-height: 30px;
 }
+
 .card_content>p{
     margin-top: 8px;
     font-family: 'Mulish', sans-serif;
@@ -292,11 +343,13 @@ nav a:hover{
     line-height: 30px;
     align-items: center;
 }
+
 .buy_now a{
     text-decoration: none;
     color: #fff;
 }
-.buy_now button{
+
+.shop_now{
     font-family: 'Mulish', sans-serif;
     font-size: 18px;
     width: 153px;
@@ -306,13 +359,40 @@ nav a:hover{
     background-color: #1B2437;
     
 }
-.buy_now button:hover{
+
+.shop_now:hover{
     background-color: #d4278c;
 }
 
-.buy_now_active{
+.shop_now-active{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    width: 153px;
+    height: 58px;
+    border-radius: 15px;
+    border: none;
     background-color: #EDA3B5;
+}
 
+.shop_now-active:hover{
+    background-color: #d4278c;
+}
+
+.catalogue{
+    position: relative;
+}
+
+.wish{
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background: none;
+}
+
+.wish img:hover{
+    background-image: url(./images/Like_icon_hover.svg);
 }
 
 /* CONTACTS SECTION */
@@ -320,10 +400,12 @@ nav a:hover{
 .contacts{
     margin-top: 70px;
 }
+
 .contacts h2{
     font-weight: 600;
     font-size: 48px;
 }
+
 .contacts_card{
     margin-top: 35px;;
     padding: 12px 12px 25px 12px;
@@ -334,6 +416,7 @@ nav a:hover{
     font-size: 18px;
     
 }
+
 .contacts_card>img{
     cursor: zoom-in ;
 }
@@ -346,14 +429,21 @@ nav a:hover{
     align-items: baseline;
     align-content: center;
 }
+
 .contact_item{
     text-align: center;
 }
+
 .contact_item h4{
     margin-top: 20px;
     cursor: pointer;
+}
+h4 a{
+    text-decoration: none;
+    color: #000;
 
 }
+
 .contact_item img{
     cursor: pointer;
 }
@@ -361,19 +451,23 @@ nav a:hover{
 /* FOOTER */
 
 .footer-section-one{
-    padding: 32px 0 56px 0;
+    padding: 32px 0 0px 0;
     background-color: #fff;
 }
+
 .footer-section-two{
     background-color: #E5E5EA;
 }
+
 .footer_wrap{
     display: flex;
     justify-content: space-between;
 }
+
 .footer_wrap img{
     cursor: pointer;
 }
+
 
 .footer_wrap article{
     margin-top: 24px;
@@ -383,6 +477,7 @@ nav a:hover{
     line-height: 30px;
     color: #8E8E93;
 }
+
 .footer_wrap ul{
     font-family: 'Mulish';
     font-weight: 400;
@@ -399,13 +494,16 @@ nav a:hover{
     color: #8E8E93;
 
 }
+
 .footer_wrap a:hover{
     color: #EDA3B5;
 }
+
 .footer_wrap a{
     text-decoration: none;
     color: #8E8E93;
 }
+
 .footer-nav{
     display: flex;
     flex-direction: column;
@@ -416,13 +514,23 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
 }
+
 .social-icons{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     cursor: pointer;
+    position: relative;
+    transition: transform 0s ease;
+    transform: translateY(0px);
 }
+
+.social-icons img:hover{
+    transform: translateY(-5px);
+    transition: transform 0.4s ease;
+}
+
 .bottom-footer_wrap p{
 
     font-family: 'Mulish';
