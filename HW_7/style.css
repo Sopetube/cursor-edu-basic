@@ -117,6 +117,7 @@ nav a:hover::after {
     max-width: 1440px;
     height: 550px;
     margin: 0 auto;
+    z-index: 1;
     
 }
 
@@ -184,6 +185,7 @@ nav a:hover::after {
 .colections div{
     border-radius: 16px;
     overflow: hidden;
+    transition: 0.4s;
 }
 .item-1{
     padding: 268px 125px 100px 32px;
@@ -209,13 +211,17 @@ nav a:hover::after {
     font-family: 'Mulish', sans-serif;
 }
 
-.colections>div:hover{
-    transform: scale(1.01);
-}
-
 .sub_title{
     font-size: 32px;
     font-weight: 900; 
+}
+
+.title{
+    font-family: 'Mulish', sans-serif;
+}
+
+.colections>div:hover:not(.item-5){
+    transform: scale(1.01);
 }
 
 .item-2{
@@ -225,9 +231,7 @@ nav a:hover::after {
     color: #1B2437;
 }
 
-.title{
-    font-family: 'Mulish', sans-serif;
-}
+
 
 .item-3{
     padding: 53px 22px;
@@ -357,6 +361,7 @@ nav a:hover::after {
     border-radius: 15px;
     border: none;
     background-color: #1B2437;
+    transition: 0.4s;
     
 }
 
@@ -372,6 +377,8 @@ nav a:hover::after {
     border-radius: 15px;
     border: none;
     background-color: #EDA3B5;
+    transition: 0.4s;
+
 }
 
 .shop_now-active:hover{
@@ -389,6 +396,7 @@ nav a:hover::after {
     right: 16px;
     border: none;
     background: none;
+
 }
 
 .wish img:hover{
