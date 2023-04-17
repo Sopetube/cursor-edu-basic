@@ -1,0 +1,120 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.first-animation{
+    margin: 100px auto;
+    width: 50vw;
+    background:url(./image/space.jpeg);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.first-animation>div{
+    margin: 0 auto;
+    width: 100%;
+    height: 25px;
+    background: rgb(153, 159, 159);
+    border: 1px solid #fff;
+    border-radius: 50px;
+    cursor: grab;
+}
+
+.holder{
+    margin-left: 10px;
+    width: 5vw;
+    height: 100%;
+    border: none;
+    background-color: #000;
+}
+.right{
+    margin-left: 80%;
+}
+
+.top-line, .rotate-top, .rotate-bottom{
+    transition: all 2s ease;
+}
+.first-animation:hover .top-line{
+    box-shadow: 0 0 20px 10px#05fe68;
+    transform: translateY(45px);
+    opacity: 0;
+}
+
+.first-animation:hover .rotate-top{
+    box-shadow: 0px 0px 20px 10px#000dff;
+    transform: rotateZ(45deg);
+    background-color: #2939c9;
+}
+
+.first-animation:hover .rotate-bottom{
+    transform: translateY(-45px) rotateZ(-45deg);
+    background-color: #ff0000;
+    box-shadow: 0px 0px 20px 10px#ff0000;
+}
+
+/* Second animation */
+
+.second-animation{
+    margin: 0 auto;
+    width: 80vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient( to right, #2939c9 30%, #58cdb4 45% 55%, #2f7576 70%);
+    background-attachment: fixed;
+}
+.ball:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 85px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.527);
+    box-shadow: 0 0 25px;
+    border-radius: 50%;
+}
+
+.left-circle .ball{
+    background: #2939c9;
+}
+.left-circle, .right-circle{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation: left 2s infinite ease 1s;
+    transform-origin: top;
+}
+.right-circle{
+    animation: right 2s infinite ease;
+}
+
+@keyframes left{
+    0%, 50%, 100%{
+        transform: rotateZ(0);
+    }
+    25%{
+        transform: rotateZ(45deg);
+    }    
+}
+.right-circle .ball{
+    background: #2f7576;
+}
+
+@keyframes right{
+    0%, 50%, 100%{
+        transform: rotateZ(0);
+    }
+    25%{
+        transform: rotateZ(-45deg);
+    }   
+}
