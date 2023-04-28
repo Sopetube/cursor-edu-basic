@@ -119,6 +119,7 @@ a {
   }
   .header__nav button {
     margin-top: 40px;
+    margin-left: 0;
   }
 }
 .purchase {
