@@ -1,3 +1,6 @@
+$breakpoint-tablet: 768px
+$breakpoint-md:580px
+$breakpoint-PHONE: 480px
 *
     padding: 0
     margin: 0
@@ -14,10 +17,14 @@ a
 .top-menu li
     display: block
     color: #505F98
+.top-menu li:hover
+    color: #d115b5
 .header__nav ul
     display: flex
     justify-content: space-around
     gap: 60px
+    a:hover
+        color: #a72c9d
 .header__nav
     display: flex
     justify-content: space-between
@@ -32,14 +39,40 @@ a
     border: none
     font-size: 12px
     font-weight: 500
+.btn__buy-now:hover
+    background: #8982df
+    color: #111B47
 .designer
     position: absolute
     top: -10px
     right: 0
     z-index: -1
-
+@media screen and (max-width: $breakpoint-tablet) 
+    .header__nav
+        align-items: center
+        flex-direction: start
+    .btn__buy-now
+       margin-left: 16px
+       border-radius: 10px
+       padding: 5px 0
+    .header__nav ul
+        gap: 15px
+        flex-wrap: wrap
+        font-size: 12px
+    img
+        padding: 0 10px
+@media screen and (max-width: $breakpoint-PHONE) 
+    .header__nav
+            display: flex
+            flex-direction: column
+            gap: 20px
+    .header__nav
+        img
+            order: -1
+            margin: 30px 0
+        button
+            margin-top: 40px     
 // PURCHASE SECTION
-
 .purchase
     height: 850px
 .purchase__content
@@ -76,9 +109,33 @@ a
             border: 2px solid #091133
             background-color: transparent
             color: #091133
-
+    button:hover
+        &:first-child
+            background: #8982df
+            color: #111B47
+        &:last-child
+            background: #111B47
+            color: #fff
+@media screen and (max-width: $breakpoint-tablet) 
+    .designer
+        display: none
+    .purchase
+        height: 60vh
+        display: flex
+    .purchase__content
+        margin-top: 100px
+        text-align: center
+        h2
+            font-size: 30px
+            line-height: 35px
+        p
+            font-size: 14px
+    .btns-block
+        justify-content: center
+        gap: 3vw
+        button
+            width: 45%       
 // PHONE SECTION
-
 .phone
     padding: 110px 0     
 .phone-wrap
@@ -86,7 +143,6 @@ a
     flex-direction: row
     gap: 30px
 .phone__content
-    // max-width: 540px
     display: flex
     flex-direction: column
     h2
@@ -108,7 +164,20 @@ a
     display: flex
     gap: 30px
     margin-top: 80px
-
+@media screen and (max-width: $breakpoint-tablet)
+        .phone
+            background: #ecf3fa
+            padding: 0 
+            margin-top: 50px
+        .phone-wrap
+            flex-direction: column-reverse
+            padding-bottom: 50px
+        .phone__hero
+            width: 80vw
+            height: 100%
+            overflow: hidden
+        .phone__herodiv
+            text-align: center
 // MAIL section
 .mail
     padding: 125px 0
@@ -130,9 +199,18 @@ a
             margin-top: 20px
         &:nth-of-type(2)
             margin-top: 15px
-
+@media screen and (max-width: $breakpoint-tablet)
+        .mail-wrap
+            flex-direction: column
+            gap: 20px
+        .mail__hero-div
+            text-align: center
+        .mail_hero
+            width: 80vw
+            height: 100%
+        .mail__content
+            text-align: center
 // Smartphone Section
-
 .smartphone
     padding: 100px 0
 .smartphone-wrap
@@ -156,16 +234,27 @@ a
             margin-top: 20px
         &:nth-of-type(2)
             margin-top: 15px
-
+@media screen and (max-width: $breakpoint-tablet)
+    .smartphone
+        padding: 0
+    .smartphone-wrap
+            flex-direction: column
+            gap: 20px
+    .smartphone__hero-div
+            text-align: center
+    .smartphone__hero
+            width: 80vw
+            height: 100%
+    .smartphone__content
+            text-align: center
+            margin: 0
 // Mail Purchase Section
-
 .mail-purchase
     padding: 100px 0
 .mail-purchase-wrap
     display: flex
     gap: 172px
 .mail-purchase__content
-    // max-width: 540px
     display: flex
     flex-direction: column
     h2
@@ -188,9 +277,29 @@ a
         font-weight: 500
         margin-top: 40px
         color: #fff
-
+    button:hover
+            background: #8982df
+            color: #111B47
+@media screen and (max-width: $breakpoint-tablet) 
+    .mail-purchase
+        padding: 0
+        margin-top: 100px
+    .mail-purchase-wrap
+            flex-direction: column
+            gap: 20px
+            button:hover
+            color: #111B47
+    .mail-purchase__hero-div
+            text-align: center
+    .mail-purchase__hero
+            width: 80vw
+            height: 100%
+    .mail-purchase__content
+            text-align: center
+            margin: 0
+    .mail-purchase__content_button
+        margin: 0 auto
 // Price Section
-    
 .price
     background: url("./images/purchase-background.svg") no-repeat
     background-size: cover
@@ -225,6 +334,12 @@ a
         font-weight: 500
         margin-top: 10px
         color: #fff
+    button:hover
+            background: #8982df
+            color: #111B47
+@media screen and (max-width: $breakpoint-tablet) 
+    .price
+        height: 60vh
     // FOOTER
 footer
     background: #E7ECFF
@@ -243,6 +358,9 @@ hr
             border-radius: 2px
             font-weight: 500
             font-size:12px
+        button:hover
+            background: #8982df
+            color: #111B47
         span
             color: #939EA4
 .footer-bottom
@@ -257,8 +375,28 @@ nav
         li
             display: inline-block
             color: #929ECC
+        li:hover
+            color: #dd1f95
 .socials
         display: flex
         flex-direction: row
         justify-content: space-between
-        gap:30px
+        align-items: center
+        gap: 30px
+        svg:hover path
+            fill: #c64fbc
+@media screen and (max-width: $breakpoint-tablet) 
+    .footer-top
+        span
+            font-size: 10px
+        button
+            font-size: 12px
+            font-weight: 400
+            margin-left: 16px
+    .footer-bottom
+        nav
+            ul
+                gap: 10px
+                font-size: 12px
+        .socials
+            gap: 10px
