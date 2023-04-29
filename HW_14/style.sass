@@ -1,0 +1,274 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    background-color: rgb(10,30,39)
+
+
+// $start-color: #fff
+// $stop-color: #191654
+
+// @mixin linear-gradient-image ("./images/hero.png", $start-color, $stop-color)
+
+a
+    text-decoration: none
+li
+    list-style: none
+p
+    font-family: 'Poppins', sans-serif
+    font-weight: 300
+    color:#fff
+    line-height: 24px
+    opacity: 80%
+h2
+    font-family: 'Playfair Display', serif
+    color: #fff
+    font-weight: 400
+h4
+    font-family: 'Poppins', sans-serif
+    font-weight: 700
+    font-size: 20px
+    color: #D3BA74
+    letter-spacing: 0.24em
+img:hover
+    filter: grayscale(100%)
+
+.container
+    max-width: 1260px
+    padding: 0 16px
+    margin: 0 auto
+.adventure
+    background: url('./images/hero.png') no-repeat 
+    background-size: cover
+    height: 1500px
+    // @include background(url("./images/hero.png") right 0 no-repeat, linear-gradient(top, #A8E7FE, #53CBF5))
+    img
+        margin-top: 30px
+.adventure__content
+    margin-top: 190px
+    max-width: 470px
+    display: flex
+    flex-direction: column
+    h2
+        font-size: 100px
+    h4
+        margin-top: 10px
+    p
+        margin-top: 40px
+    button
+        cursor: pointer
+        margin-top: 40px
+        font-size: 12px
+        text-transform: uppercase
+        padding: 10px 0
+        width: 100px
+        border: 1px solid #fff 
+        background: none
+        color: #fff
+        border-radius: 4px
+        &:hover
+            background: #fff
+            color: #29383e
+
+    // STEP1 Section
+.step1
+    padding: 40px 0
+.step1-wrap
+    display: flex
+    flex-direction: column
+    gap: 65px
+    div
+        width: 100%
+    .step1-top
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        gap: 20px
+    article
+        max-width: 560px
+        h2
+            font-size: 70px
+            position: relative
+            &::before
+                content: '01'
+                position: absolute
+                font-family: 'Poppins'
+                font-weight: 600
+                font-size: 180px
+                top: -150px
+                left: -145px
+                opacity: .3
+            &::after
+                position: absolute
+                content: ''
+                width: 50px
+                height: 2px
+                background: #D3BA74
+                top: -15px
+                left: -0
+        h4
+            margin: 10px 0 0 60px
+    .step1-bottom
+        display: grid
+        grid-template-columns: repeat(4, 270px)
+        gap: 40px
+
+// STEP2
+.step2
+    padding: 40px 0
+.step2-wrap
+    img
+        max-width: 512px
+        height: 100%
+    display: flex
+    gap: 210px
+    align-items: center
+    article
+        max-width: 560px
+        h2
+            font-size: 70px
+            position: relative
+            &::before
+                content: '02'
+                position: absolute
+                font-family: 'Poppins'
+                font-weight: 600
+                font-size: 180px
+                top: -150px
+                left: -190px
+                opacity: .3
+            &::after
+                position: absolute
+                content: ''
+                width: 50px
+                height: 2px
+                background: #D3BA74
+                top: -15px
+                left: -0
+        h4
+            margin: 10px 0 0 60px
+// STEP3
+// .step3-wrap
+//     display: flex
+//     align-items: center
+//     justify-content: flex-end
+//     gap: 5px
+//     div
+//         width: 100%
+//     article
+//         max-width: 552px
+//         h2
+//             font-size: 70px
+//             position: relative
+//             &::before
+//                 content: '03'
+//                 position: absolute
+//                 font-family: 'Poppins'
+//                 font-weight: 600
+//                 font-size: 180px
+//                 top: -150px
+//                 left: -170px
+//                 opacity: .3
+//             &::after
+//                 position: absolute
+//                 content: ''
+//                 width: 50px
+//                 height: 2px
+//                 background: #D3BA74
+//                 top: -15px
+//                 left: -0
+//         h4
+//             margin: 10px 0 0 60px
+.step3
+    padding: 40px 0
+.step3-wrap
+    display: flex
+    flex-direction: column
+    gap: 65px
+    div
+        width: 100%
+    .step3-top
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        gap: 5px
+    article
+        max-width: 560px
+        h2
+            font-size: 70px
+            position: relative
+            &::before
+                content: '03'
+                position: absolute
+                font-family: 'Poppins'
+                font-weight: 600
+                font-size: 180px
+                top: -150px
+                left: -160px
+                opacity: .3
+            &::after
+                position: absolute
+                content: ''
+                width: 50px
+                height: 2px
+                background: #D3BA74
+                top: -15px
+                left: -0
+        h4
+            margin: 10px 0 0 60px
+    .step3-bottom
+        display: grid
+        grid-template-columns: repeat(4, 270px)
+        gap: 40px
+
+// counters
+.counters-wrap
+    padding: 150px 0 130px 0
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+    display: flex
+    justify-content: center
+    text-align: center
+    gap: 100px
+    span
+        font-family: 'Poppins'
+        font-weight: 600
+        font-size: 100px
+        opacity: .15
+        color: #fff
+// EXPLORE
+.explore-wrap
+    padding: 80px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+    article 
+        max-width: 512px
+        h2
+            font-size: 70px
+        p
+            margin-top: 12px
+        button
+            cursor: pointer
+            margin-top: 40px
+            font-size: 12px
+            text-transform: uppercase
+            padding: 10px 0
+            width: 100px
+            border: 1px solid #fff 
+            background: none
+            color: #fff
+            border-radius: 4px
+            &:hover
+                background: #fff
+                color: #29383e
+// FOOTER:
+.footer-wrap
+    padding: 40px 0
+    display: flex
+    justify-content: space-between
+.social-networks
+    display: flex
+    gap: 45px
+    align-items: center

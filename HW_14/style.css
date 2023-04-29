@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(10, 30, 39);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  line-height: 24px;
+  opacity: 80%;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #D3BA74;
+  letter-spacing: 0.24em;
+}
+
+img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.adventure {
+  background: url("./images/hero.png") no-repeat;
+  background-size: cover;
+  height: 1500px;
+}
+.adventure img {
+  margin-top: 30px;
+}
+
+.adventure__content {
+  margin-top: 190px;
+  max-width: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.adventure__content h2 {
+  font-size: 100px;
+}
+.adventure__content h4 {
+  margin-top: 10px;
+}
+.adventure__content p {
+  margin-top: 40px;
+}
+.adventure__content button {
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  width: 100px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  border-radius: 4px;
+}
+.adventure__content button:hover {
+  background: #fff;
+  color: #29383e;
+}
+
+.step1 {
+  padding: 40px 0;
+}
+
+.step1-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 65px;
+}
+.step1-wrap div {
+  width: 100%;
+}
+.step1-wrap .step1-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
+.step1-wrap article {
+  max-width: 560px;
+}
+.step1-wrap article h2 {
+  font-size: 70px;
+  position: relative;
+}
+.step1-wrap article h2::before {
+  content: "01";
+  position: absolute;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 180px;
+  top: -150px;
+  left: -145px;
+  opacity: 0.3;
+}
+.step1-wrap article h2::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #D3BA74;
+  top: -15px;
+  left: 0;
+}
+.step1-wrap article h4 {
+  margin: 10px 0 0 60px;
+}
+.step1-wrap .step1-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 270px 40px 270px 40px 270px 40px 270px;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px;
+}
+
+.step2 {
+  padding: 40px 0;
+}
+
+.step2-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 210px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.step2-wrap img {
+  max-width: 512px;
+  height: 100%;
+}
+.step2-wrap article {
+  max-width: 560px;
+}
+.step2-wrap article h2 {
+  font-size: 70px;
+  position: relative;
+}
+.step2-wrap article h2::before {
+  content: "02";
+  position: absolute;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 180px;
+  top: -150px;
+  left: -190px;
+  opacity: 0.3;
+}
+.step2-wrap article h2::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #D3BA74;
+  top: -15px;
+  left: 0;
+}
+.step2-wrap article h4 {
+  margin: 10px 0 0 60px;
+}
+
+.step3 {
+  padding: 40px 0;
+}
+
+.step3-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 65px;
+}
+.step3-wrap div {
+  width: 100%;
+}
+.step3-wrap .step3-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 5px;
+}
+.step3-wrap article {
+  max-width: 560px;
+}
+.step3-wrap article h2 {
+  font-size: 70px;
+  position: relative;
+}
+.step3-wrap article h2::before {
+  content: "03";
+  position: absolute;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 180px;
+  top: -150px;
+  left: -160px;
+  opacity: 0.3;
+}
+.step3-wrap article h2::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #D3BA74;
+  top: -15px;
+  left: 0;
+}
+.step3-wrap article h4 {
+  margin: 10px 0 0 60px;
+}
+.step3-wrap .step3-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 270px 40px 270px 40px 270px 40px 270px;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px;
+}
+
+.counters-wrap {
+  padding: 150px 0 130px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 100px;
+}
+.counters-wrap span {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 100px;
+  opacity: 0.15;
+  color: #fff;
+}
+
+.explore-wrap {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.explore-wrap article {
+  max-width: 512px;
+}
+.explore-wrap article h2 {
+  font-size: 70px;
+}
+.explore-wrap article p {
+  margin-top: 12px;
+}
+.explore-wrap article button {
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  width: 100px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  border-radius: 4px;
+}
+.explore-wrap article button:hover {
+  background: #fff;
+  color: #29383e;
+}
+
+.footer-wrap {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
