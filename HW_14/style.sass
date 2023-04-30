@@ -1,16 +1,13 @@
+$breakpoint-desktop: 1270px
+$breakpoint-tablet: 768px
+$breakpoint-md: 550px
+$breakpoint-PHONE: 360px
 *
     margin: 0
     padding: 0
     box-sizing: border-box
 body
     background-color: rgb(10,30,39)
-
-
-// $start-color: #fff
-// $stop-color: #191654
-
-// @mixin linear-gradient-image ("./images/hero.png", $start-color, $stop-color)
-
 a
     text-decoration: none
 li
@@ -33,16 +30,15 @@ h4
     letter-spacing: 0.24em
 img:hover
     filter: grayscale(100%)
-
 .container
     max-width: 1260px
     padding: 0 16px
     margin: 0 auto
+// Start
 .adventure
-    background: url('./images/hero.png') no-repeat 
+    background: linear-gradient(top, #ffffff00, rgb(10,30,39)), url('./images/hero.png') no-repeat
     background-size: cover
     height: 1500px
-    // @include background(url("./images/hero.png") right 0 no-repeat, linear-gradient(top, #A8E7FE, #53CBF5))
     img
         margin-top: 30px
 .adventure__content
@@ -70,7 +66,26 @@ img:hover
         &:hover
             background: #fff
             color: #29383e
-
+@media screen and (max-width:$breakpoint-tablet)
+    .adventure
+        height: 100vh
+    .adventure-wrap
+        text-align: center
+    .adventure__content
+        text-align: left
+        margin: 0 auto
+        margin-top: 20vh
+@media screen and (max-width:$breakpoint-md)
+    .adventure
+        height: 70vh
+    .adventure__content
+        margin-top: 100px
+        h2
+            font-size: 65px
+        p
+            font-size: 13px
+        h4
+            font-size: 15px
     // STEP1 Section
 .step1
     padding: 40px 0
@@ -85,46 +100,97 @@ img:hover
         align-items: center
         justify-content: flex-end
         gap: 20px
-    article
-        max-width: 560px
-        h2
-            font-size: 70px
-            position: relative
-            &::before
-                content: '01'
-                position: absolute
-                font-family: 'Poppins'
-                font-weight: 600
-                font-size: 180px
-                top: -150px
-                left: -145px
-                opacity: .3
-            &::after
-                position: absolute
-                content: ''
-                width: 50px
-                height: 2px
-                background: #D3BA74
-                top: -15px
-                left: -0
-        h4
-            margin: 10px 0 0 60px
+        article
+            max-width: 560px
+            h2
+                font-size: 70px
+                position: relative
+                &::before
+                    content: '01'
+                    position: absolute
+                    font-family: 'Poppins'
+                    font-weight: 600
+                    font-size: 180px
+                    top: -150px
+                    left: -145px
+                    opacity: .3
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 50px
+                    height: 2px
+                    background: #D3BA74
+                    top: -15px
+                    left: -0
+            h4
+                margin: 10px 0 0 60px
     .step1-bottom
         display: grid
         grid-template-columns: repeat(4, 270px)
         gap: 40px
-
-// STEP2
+        div
+            overflow: hidden
+@media screen and (max-width:$breakpoint-desktop)
+    .step1-wrap
+        .step1-top
+            justify-content: space-between
+            img
+                width: 40%
+                height: 100%
+            article
+                    h4
+                        margin-left: 225px
+                    h2
+                        &::before
+                            top: -175px
+                            left: 0
+                        &::after
+                            top: -18px
+                            left: 155px
+        .step1-bottom
+            grid-template-columns: repeat(2, 33%)
+            justify-content: center
+            gap: 15%
+            img
+                width: 40vw
+@media screen and (max-width:$breakpoint-tablet)
+    .step1-wrap
+        .step1-top
+            flex-direction: column
+            img
+                width: 100%
+        .step1-bottom
+            grid-template-columns: repeat(2, 45%)
+            justify-content: center
+            gap: 5%
+            img
+                width: 43vw
+@media screen and (max-width:$breakpoint-md)
+    .step1-wrap
+        .step1-top
+            article
+                h2
+                    &::before
+                        top: -200px
+                        left: 0
+                    &::after
+                        top: -18px
+                        left: 155px
+                p
+                    font-size: 13px
+                h4
+                    font-size: 15px
+    // STEP2
 .step2
     padding: 40px 0
 .step2-wrap
-    img
-        max-width: 512px
-        height: 100%
     display: flex
     gap: 210px
     align-items: center
-    article
+    img
+        max-width: 512px
+        height: 100%
+    .step2__content
         max-width: 560px
         h2
             font-size: 70px
@@ -147,39 +213,54 @@ img:hover
                 top: -15px
                 left: -0
         h4
-            margin: 10px 0 0 60px
-// STEP3
-// .step3-wrap
-//     display: flex
-//     align-items: center
-//     justify-content: flex-end
-//     gap: 5px
-//     div
-//         width: 100%
-//     article
-//         max-width: 552px
-//         h2
-//             font-size: 70px
-//             position: relative
-//             &::before
-//                 content: '03'
-//                 position: absolute
-//                 font-family: 'Poppins'
-//                 font-weight: 600
-//                 font-size: 180px
-//                 top: -150px
-//                 left: -170px
-//                 opacity: .3
-//             &::after
-//                 position: absolute
-//                 content: ''
-//                 width: 50px
-//                 height: 2px
-//                 background: #D3BA74
-//                 top: -15px
-//                 left: -0
-//         h4
-//             margin: 10px 0 0 60px
+            margin: 10px 0 0 60px       
+@media screen and (max-width:$breakpoint-desktop)
+    .step2-wrap
+        padding-top: 100px
+        gap: 30px
+        img
+            width: 40%
+        .step2__content
+            h2
+                &::before
+                    top: -200px
+                    left: 0
+                &::after
+                    top: -18px
+                    left: 180px
+            h4
+                margin-left: 245px
+@media screen and (max-width:$breakpoint-tablet)
+    .step2-wrap
+        flex-direction: column-reverse
+        img
+            width: 100%
+@media screen and (max-width:$breakpoint-md)
+    .step2-wrap
+        img
+            width: 100%
+        .step2__content
+            width: 100%
+            h2
+                &::before
+                    font-size: 150px
+                    top: -172px
+                    left: 0
+                &::after
+                    top: -13px
+                    left: 150px
+            p
+                font-size: 13px
+            h4
+                font-size: 14px
+                margin-left: 205px
+@media screen and (max-width:$breakpoint-PHONE)
+    .step2-wrap
+        .step2__content
+            h4
+                font-size: 12px
+                margin-left: 210px
+    // STEP3
 .step3
     padding: 40px 0
 .step3-wrap
@@ -193,35 +274,66 @@ img:hover
         align-items: center
         justify-content: flex-end
         gap: 5px
-    article
-        max-width: 560px
-        h2
-            font-size: 70px
-            position: relative
-            &::before
-                content: '03'
-                position: absolute
-                font-family: 'Poppins'
-                font-weight: 600
-                font-size: 180px
-                top: -150px
-                left: -160px
-                opacity: .3
-            &::after
-                position: absolute
-                content: ''
-                width: 50px
-                height: 2px
-                background: #D3BA74
-                top: -15px
-                left: -0
-        h4
-            margin: 10px 0 0 60px
+        article
+            max-width: 560px
+            h2
+                font-size: 70px
+                position: relative
+                &::before
+                    content: '03'
+                    position: absolute
+                    font-family: 'Poppins'
+                    font-weight: 600
+                    font-size: 180px
+                    top: -150px
+                    left: -160px
+                    opacity: .3
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 50px
+                    height: 2px
+                    background: #D3BA74
+                    top: -10px
+                    left: -0
+            h4
+                margin: 10px 0 0 60px
     .step3-bottom
         display: grid
         grid-template-columns: repeat(4, 270px)
         gap: 40px
-
+        div
+            overflow: hidden
+@media screen and (max-width:$breakpoint-desktop)
+    .step3
+        padding-top: 125px
+        .step3-wrap
+            .step3-top
+                justify-content: space-between
+                img
+                    width: 100%
+                article
+                    h2
+                        &::before
+                            top: -175px
+                            left: 0
+                        &::after
+                            top: -48px
+                            left: 170px
+                    h4
+                            margin-left: 225px
+            .step3-bottom
+                grid-template-columns: repeat(2, 33%)
+                justify-content: center
+                gap: 15%
+                img
+                    width: 40vw
+@media screen and (max-width:$breakpoint-tablet)
+    .step3-wrap
+        .step3-top
+            flex-direction: column
+            img
+                width: 100%
 // counters
 .counters-wrap
     padding: 150px 0 130px 0
@@ -236,6 +348,9 @@ img:hover
         font-size: 100px
         opacity: .15
         color: #fff
+@media screen and (max-width:$breakpoint-desktop)
+    .counters-wrap
+        flex-wrap: wrap
 // EXPLORE
 .explore-wrap
     padding: 80px 0
@@ -263,6 +378,14 @@ img:hover
             &:hover
                 background: #fff
                 color: #29383e
+@media screen and (max-width:$breakpoint-desktop)
+    .explore
+        background: linear-gradient(top, #ffffff00, rgb(10,30,39)), linear-gradient(bottom, #ffffff00, rgb(10,30,39)), url('./images/sky2.png') no-repeat
+        background-size: cover
+    .explore-wrap
+        justify-content: center
+        img
+            display: none    
 // FOOTER:
 .footer-wrap
     padding: 40px 0
@@ -272,3 +395,14 @@ img:hover
     display: flex
     gap: 45px
     align-items: center
+@media screen and (max-width:$breakpoint-tablet) 
+    .social-networks
+        gap: 30px
+@media screen and (max-width:$breakpoint-md)
+    .footer-wrap
+        img
+            width: 30%
+    .social-networks
+        gap: 20px
+        svg
+            width: 15px
