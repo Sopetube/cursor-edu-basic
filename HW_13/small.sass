@@ -1,5 +1,7 @@
 .bottom-btns
     margin-top: 75px
+    display: flex
+    flex-direction: column
 .sml-flex-col 
     button
         width: 111px
@@ -40,9 +42,6 @@
     background: none
     border: 1px solid #18A0FB
     color: #18A0FB
-
-
-
 .sml-additional
     display: flex
     flex-direction: column
@@ -77,9 +76,6 @@
             border-radius: 0
             border: 1px solid #E0E0E0
             border-left: none
-
-// ============================================
-
 .search-rounded
     display: flex
     gap: 20px
@@ -96,3 +92,47 @@
     height: 48px
     background: #00D200
     border-radius: 50px
+.sml-wrap-chips
+    margin-top: 50px
+.sml-wrap-chips__big
+    display: flex
+    gap: 12px
+    button
+        width: 65px
+        height: 28px
+        border-radius: 5px
+        display: flex
+        align-items: center
+        gap: 10px
+        &:first-child
+            border: 1px solid #E0E0E0
+            background: #fff
+            color: #2C2C2C
+            span
+                font-size: 13px
+                color: #2C2C2C
+        &:last-child
+            border: none
+            background: #18A0FB
+            color: #fff
+            span
+            font-size: 13px
+            color: #fff
+.sml-wrap-chips__small
+    margin-top: 15px
+    display: flex
+    gap: 25px
+    button
+        width: 51px
+        height: 28px
+        border-radius: 5px
+        display: flex
+        align-items: center
+        justify-content: center
+        &:first-child
+            border: 1px solid #E0E0E0
+            color: #2C2C2C
+        &:last-child
+            border: none
+            background: #18A0FB
+            color: #fff

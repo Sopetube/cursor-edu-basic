@@ -1,5 +1,12 @@
 .bottom-btns {
   margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sml-flex-col button {
@@ -147,4 +154,73 @@
   height: 48px;
   background: #00D200;
   border-radius: 50px;
+}
+
+.sml-wrap-chips {
+  margin-top: 50px;
+}
+
+.sml-wrap-chips__big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+.sml-wrap-chips__big button {
+  width: 65px;
+  height: 28px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.sml-wrap-chips__big button:first-child {
+  border: 1px solid #E0E0E0;
+  background: #fff;
+  color: #2C2C2C;
+}
+.sml-wrap-chips__big button:first-child span {
+  font-size: 13px;
+  color: #2C2C2C;
+}
+.sml-wrap-chips__big button:last-child {
+  border: none;
+  background: #18A0FB;
+  color: #fff;
+  font-size: 13px;
+  color: #fff;
+}
+.sml-wrap-chips__small {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+.sml-wrap-chips__small button {
+  width: 51px;
+  height: 28px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sml-wrap-chips__small button:first-child {
+  border: 1px solid #E0E0E0;
+  color: #2C2C2C;
+}
+.sml-wrap-chips__small button:last-child {
+  border: none;
+  background: #18A0FB;
+  color: #fff;
 }

@@ -9,10 +9,10 @@ button:hover {
   cursor: pointer;
 }
 
-.main div {
-  width: 100%;
+.main {
+  padding-top: 45px;
+  padding-left: 55px;
 }
-
 .flex-col button {
   width: 144px;
   height: 46px;
@@ -42,7 +42,6 @@ button:hover {
 }
 
 .big-btns {
-  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
