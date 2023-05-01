@@ -1,0 +1,150 @@
+.bottom-btns {
+  margin-top: 75px;
+}
+
+.sml-flex-col button {
+  width: 111px;
+  height: 36px;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  border-radius: 5px;
+}
+.sml-flex-col button img {
+  display: inline;
+  margin-left: 10px;
+}
+
+.sml-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 132px;
+}
+
+.sml-btns {
+  margin-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 55px;
+}
+
+.sml-flex-col {
+  width: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.sml-btn__filled {
+  color: #fff;
+  background: #18A0FB;
+  border: none;
+}
+
+.sml-btn__inactive {
+  color: gray;
+  border: none;
+}
+
+.sml-btn__transparent {
+  background: none;
+  border: 1px solid #E0E0E0;
+}
+
+.sml-btn__active {
+  background: none;
+  border: 1px solid #18A0FB;
+  color: #18A0FB;
+}
+
+.sml-additional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.long-btn-sml {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sml-additional__tabs button, .sml-additional__search button, .sml-additional__sizes button {
+  width: 86px;
+  height: 36px;
+  background-color: #fff;
+  border: none;
+}
+.sml-additional__tabs button:first-child, .sml-additional__search button:first-child, .sml-additional__sizes button:first-child {
+  background: #18A0FB;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+}
+.sml-additional__tabs button:last-child, .sml-additional__search button:last-child, .sml-additional__sizes button:last-child {
+  border: 1px solid #E0E0E0;
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.sml-additional__search button {
+  width: 48px;
+}
+.sml-additional__search button:nth-child(2) {
+  border-radius: 0;
+  border: 1px solid #E0E0E0;
+  border-left: none;
+}
+
+.sml-additional__sizes button {
+  width: 58px;
+}
+.sml-additional__sizes button:nth-child(2) {
+  border-radius: 0;
+  border: 1px solid #E0E0E0;
+  border-left: none;
+}
+
+.search-rounded {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.search-rounded button {
+  border: none;
+  color: #fff;
+}
+
+.search-rounded__red {
+  width: 36px;
+  height: 36px;
+  background: red;
+  border-radius: 50px;
+}
+
+.search-rounded__green {
+  width: 48px;
+  height: 48px;
+  background: #00D200;
+  border-radius: 50px;
+}

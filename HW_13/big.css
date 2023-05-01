@@ -1,0 +1,142 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.main div {
+  width: 100%;
+}
+
+.flex-col button {
+  width: 144px;
+  height: 46px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  border-radius: 5px;
+}
+.flex-col button img {
+  display: inline;
+  margin-left: 10px;
+}
+
+.big-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 132px;
+}
+
+.big-btns {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.flex-col {
+  width: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.big-btn__filled {
+  color: #fff;
+  background: #18A0FB;
+  border: none;
+}
+
+.big-btn__inactive {
+  color: gray;
+  border: none;
+}
+
+.big-btn__transparent {
+  background: none;
+  border: 1px solid #E0E0E0;
+}
+
+.big-btn__active {
+  background: none;
+  border: 1px solid #18A0FB;
+  color: #18A0FB;
+}
+
+.big-additional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.long-btn, .big-additional__sizes, .big-additional__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.long-btn button, .big-additional__sizes button, .big-additional__tabs button {
+  width: 86px;
+  height: 36px;
+  background-color: #fff;
+  border: none;
+}
+.long-btn button:first-child, .big-additional__sizes button:first-child, .big-additional__tabs button:first-child {
+  background: #18A0FB;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+}
+.long-btn button:last-child, .big-additional__sizes button:last-child, .big-additional__tabs button:last-child {
+  border: 1px solid #E0E0E0;
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.big-additional__icons button {
+  width: 56px;
+  height: 48px;
+}
+.big-additional__icons button:nth-child(2) {
+  border-radius: 0;
+  border: 1px solid #E0E0E0;
+  border-left: none;
+}
+
+.big-additional__tabs button {
+  width: 134px;
+  height: 46px;
+}
+
+.big-additional__sizes button {
+  width: 106px;
+  height: 46px;
+}
+.big-additional__sizes button:nth-child(2) {
+  border-radius: 0;
+  border: 1px solid #E0E0E0;
+  border-left: none;
+}
