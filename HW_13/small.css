@@ -191,9 +191,12 @@
   border: none;
   background: #18A0FB;
   color: #fff;
+}
+.sml-wrap-chips__big button:last-child span {
   font-size: 13px;
   color: #fff;
 }
+
 .sml-wrap-chips__small {
   margin-top: 15px;
   display: -webkit-box;
